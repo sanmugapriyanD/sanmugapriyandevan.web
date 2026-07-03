@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Login Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
+<title>APEC Student Login</title>
 
-        body{
-            background:linear-gradient(135deg,#1e3c72,#2a5298);
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        .login-box{
-            width:350px;
-            background:white;
-            padding:30px;
-            border-radius:12px;
-            text-align:center;
-            box-shadow:0 0 20px rgba(0,0,0,0.3);
-        }
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-        .login-box img{
-            width:100px;
-            height:100px;
-            margin-bottom:15px;
-        }
+.login-box{
+    width:370px;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
 
-        h2{
-            margin-bottom:20px;
-            color:#333;
-        }
+.logo{
+    width:90px;
+    height:90px;
+    margin-bottom:10px;
+}
 
-        input{
-            width:100%;
-            padding:12px;
-            margin:10px 0;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:16px;
-        }
+h2{
+    color:#1e3c72;
+    margin-bottom:5px;
+}
 
-        input:focus{
-            border-color:#2a5298;
-            outline:none;
-        }
+h3{
+    color:#444;
+    font-size:18px;
+    margin-bottom:5px;
+}
 
-        button{
-            width:100%;
-            padding:12px;
-            background:#2a5298;
-            color:white;
-            border:none;
-            border-radius:5px;
-            font-size:16px;
-            cursor:pointer;
-        }
+.college{
+    color:#777;
+    font-size:14px;
+    margin-bottom:20px;
+}
 
-        button:hover{
-            background:#1e3c72;
-        }
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
 
-        a{
-            text-decoration:none;
-            color:#2a5298;
-            font-size:14px;
-        }
+input:focus{
+    border-color:#1e3c72;
+    outline:none;
+}
 
-        p{
-            margin-top:15px;
-            font-size:14px;
-            color:#555;
-        }
-    </style>
+button{
+    width:100%;
+    padding:12px;
+    background:#1e3c72;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#2a5298;
+}
+
+a{
+    text-decoration:none;
+    color:#1e3c72;
+}
+
+.footer{
+    margin-top:20px;
+    color:#666;
+    font-size:13px;
+}
+</style>
+
 </head>
 
 <body>
@@ -89,21 +102,29 @@
 <div class="login-box">
 
     <!-- College Logo -->
-    <img src="apec-logo.jpeg" alt="APEC Logo" class="logo">
+    <img src="apec-logo.png.jpeg" alt="APEC Logo" class="logo">
 
-    <h2>College Login</h2>
+    <h2>APEC Student Login</h2>
+
+    <h3>Adhiparasakthi Engineering College</h3>
+
+    <p class="college">Melmaruvathur, Tamil Nadu</p>
 
     <form>
-        <input type="text" placeholder="Enter Username" required>
+        <input type="text" placeholder="Enter Register Number" required>
 
         <input type="password" placeholder="Enter Password" required>
 
         <button type="submit">Login</button>
     </form>
 
-    <p><a href="#">Forgot Password?</a></p>
+    <br>
 
-    <p>© 2026 Your College Name</p>
+    <a href="#">Forgot Password?</a>
+
+    <p class="footer">
+        © 2026 Adhiparasakthi Engineering College
+    </p>
 
 </div>
 
